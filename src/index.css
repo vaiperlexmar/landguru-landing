@@ -1,0 +1,74 @@
+:root {
+  /* mobile font sizes */
+
+  --fs-1: 3.2rem;
+  --fs-2: 2.4rem;
+  --fs-3: 2rem;
+  --fs-4: 1.8rem;
+  --fs-5: 1.6rem;
+  --fs-6: 1.4rem;
+  --fs-7: 1.2rem;
+
+  --dark-navy: #1e3c72;
+  --navy: #2a5298;
+}
+
+/*-----------------------------------*\
+  #RESET
+\*-----------------------------------*/
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: var(--light-black);
+  font-family: "Poppins", sans-serif;
+}
+
+#container {
+  padding: 4vw;
+}
+
+/*-----------------------------------*\
+  #HEADER
+\*-----------------------------------*/
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.header__logo {
+  display: flex;
+  font-size: var(--fs-3);
+  align-items: center;
+  gap: 1rem;
+  font-weight: bold;
+  color: white;
+}
+
+.header__logo-img {
+  width: 3rem;
+}
+
+.header__nav-list {
+  font-family: "DM Sans", sans-serif;
+  list-style: none;
+}
+
+.header__nav-link {
+  text-decoration: none;
+  color: var(--white);
+  font-size: var(--fs-5);
+}
