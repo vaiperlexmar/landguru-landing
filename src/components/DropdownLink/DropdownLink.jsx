@@ -26,7 +26,7 @@ export default function DropdownLink({ name, children }) {
         }`}
         onClick={() => handleClick()}
       >
-        Supports{" "}
+        {name}{" "}
         <motion.img
           src={chevroneDown}
           animate={{
@@ -46,21 +46,7 @@ export default function DropdownLink({ name, children }) {
         animate={isOpen ? "open" : "closed"}
         variants={variantsSubNav}
       >
-        <li className="header__nav-subitem">
-          <a href="#" className="header__nav-sublink">
-            Support
-          </a>
-        </li>
-        <li className="header__nav-subitem">
-          <a href="#" className="header__nav-sublink">
-            Support
-          </a>
-        </li>
-        <li className="header__nav-subitem">
-          <a href="#" className="header__nav-sublink">
-            Support
-          </a>
-        </li>
+        {children}
       </motion.ul>
     </>
   );
