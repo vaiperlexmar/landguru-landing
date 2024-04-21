@@ -7,8 +7,9 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const [activeIndex, setActiveIndex] = useState(-1);
 
-  function toggle() {
+  function toggleHamburger() {
     setIsOpen(!isOpen);
+    setActiveIndex(-1); // To close the dropdown when closing the hamburger
   }
 
   return (
@@ -20,7 +21,7 @@ export default function Header() {
 
       <div
         className={`header__hambuger ${isOpen ? "open" : ""}`}
-        onClick={() => toggle()}
+        onClick={() => toggleHamburger()}
       >
         <span></span>
         <span></span>
