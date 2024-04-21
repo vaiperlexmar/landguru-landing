@@ -5,6 +5,7 @@ import DropdownLink from "./DropdownLink/DropdownLink";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
+  const [activeIndex, setActiveIndex] = useState(-1);
 
   function toggle() {
     setIsOpen(!isOpen);
@@ -50,7 +51,13 @@ export default function Header() {
             </a>
           </li>
           <li className="header__nav-item">
-            <DropdownLink name={"Adversite"}>
+            <DropdownLink
+              name={"Adversite"}
+              isActive={activeIndex === 0}
+              onShow={() =>
+                activeIndex === 0 ? setActiveIndex(-1) : setActiveIndex(0)
+              }
+            >
               <li className="header__nav-subitem">
                 <a href="#" className="header__nav-sublink">
                   Adversite
@@ -70,7 +77,13 @@ export default function Header() {
           </li>
 
           <li className="header__nav-item">
-            <DropdownLink name={"Support"}>
+            <DropdownLink
+              name={"Support"}
+              isActive={activeIndex === 1}
+              onShow={() =>
+                activeIndex === 1 ? setActiveIndex(-1) : setActiveIndex(1)
+              }
+            >
               <li className="header__nav-subitem">
                 <a href="#" className="header__nav-sublink">
                   Support
