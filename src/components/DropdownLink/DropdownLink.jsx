@@ -15,6 +15,7 @@ export default function DropdownLink({ name, children }) {
       height: 0,
       y: 0,
       opacity: 0,
+      visibility: "hidden",
     },
   };
 

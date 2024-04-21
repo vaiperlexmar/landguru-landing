@@ -50,9 +50,23 @@ export default function Header() {
             </a>
           </li>
           <li className="header__nav-item">
-            <a href="#" className="header__nav-link">
-              Adversite
-            </a>
+            <DropdownLink name={"Adversite"}>
+              <li className="header__nav-subitem">
+                <a href="#" className="header__nav-sublink">
+                  Adversite
+                </a>
+              </li>
+              <li className="header__nav-subitem">
+                <a href="#" className="header__nav-sublink">
+                  Adversite
+                </a>
+              </li>
+              <li className="header__nav-subitem">
+                <a href="#" className="header__nav-sublink">
+                  Adversite
+                </a>
+              </li>
+            </DropdownLink>
           </li>
 
           <li className="header__nav-item">
