@@ -78,6 +78,7 @@ body {
   gap: 1rem;
   font-weight: bold;
   color: var(--white);
+  z-index: 4;
 }
 
 .header__logo-img {
@@ -93,8 +94,8 @@ body {
   left: 0;
   text-align: center;
   width: 100%;
-  z-index: -1;
   padding: 2rem 0;
+  z-index: 1;
 }
 
 .header__nav-list {

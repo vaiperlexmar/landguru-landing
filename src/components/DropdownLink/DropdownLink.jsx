@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { motion, cubicBezier } from "framer-motion";
 import chevroneDown from "../../assets/chevrone-down.svg";
 

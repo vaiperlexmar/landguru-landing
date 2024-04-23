@@ -34,7 +34,7 @@ export default function Header() {
         animate={{
           display: isOpen ? "block" : "none",
           y: isOpen ? 75 : "-100%",
-          opacity: isOpen ? 1 : 0.2,
+          opacity: isOpen ? 0.99 : 0.2,
           style: {
             backgroundColor: isOpen ? "transparent" : "var(--dark-navy)",
           },
