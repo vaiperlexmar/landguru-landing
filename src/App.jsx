@@ -6,6 +6,9 @@ import shape_1 from "../src/assets/Rectangle 1.png";
 import shape_2 from "../src/assets/Rectangle 1.1.png";
 import circle_shape_1 from "../src/assets/circle.png";
 import circle_shape_2 from "../src/assets/circle-2.png";
+import paypalIcon from "../src/assets/paypal.svg";
+import googleIcon from "../src/assets/google.svg";
+import dropboxIcon from "../src/assets/dropbox.svg";
 
 function App() {
   return (
@@ -47,6 +50,33 @@ function App() {
                 <img src={playCircle} alt="" /> Watch video
               </a>
             </div>
+
+            <p className="hero__sponsored paragraph">
+              Sponsored by:{" "}
+              <ul className="hero__sponsored-list">
+                <li className="hero__sponsored-item">
+                  <img
+                    className="hero__sponsored-img"
+                    src={paypalIcon}
+                    alt=""
+                  />
+                </li>
+                <li className="hero__sponsored-item">
+                  <img
+                    className="hero__sponsored-img"
+                    src={googleIcon}
+                    alt=""
+                  />
+                </li>
+                <li className="hero__sponsored-item">
+                  <img
+                    className="hero__sponsored-img"
+                    src={dropboxIcon}
+                    alt=""
+                  />
+                </li>
+              </ul>{" "}
+            </p>
           </div>
         </section>
       </div>

@@ -250,6 +250,7 @@ body {
   align-items: center;
   gap: 2rem;
   justify-content: center;
+  margin-bottom: 2rem;
 }
 
 .hero__cta-video {
@@ -261,4 +262,15 @@ body {
 .hero__cta-video img {
   width: 2.8rem;
   filter: invert(100%);
+}
+
+.hero__sponsored-list {
+  margin-top: 1.5rem;
+  list-style: none;
+}
+
+.hero__sponsored-item {
+  display: inline-block;
+  margin-right: 2rem;
+  margin-bottom: 1rem;
 }
