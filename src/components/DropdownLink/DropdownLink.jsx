@@ -15,7 +15,7 @@ export default function DropdownLink({ name, children, isActive, onShow }) {
   return (
     <>
       <span
-        className={`header__nav-link header__nav-dropdown ${
+        className={`header__nav-link link header__nav-dropdown ${
           isActive ? "open" : ""
         }`}
         onClick={onShow}

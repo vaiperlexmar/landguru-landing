@@ -33,7 +33,7 @@ export default function Header() {
         className={`header__nav ${isOpen ? "open" : ""}`}
         animate={{
           display: isOpen ? "block" : "none",
-          y: isOpen ? 75 : "-100%",
+          y: isOpen ? "0" : "-100%",
           opacity: isOpen ? 0.99 : 0.2,
           style: {
             backgroundColor: isOpen ? "transparent" : "var(--dark-navy)",
@@ -47,7 +47,7 @@ export default function Header() {
       >
         <ul className="header__nav-list">
           <li className="header__nav-item">
-            <a href="#" className="header__nav-link">
+            <a href="#" className="header__nav-link link">
               Home
             </a>
           </li>
@@ -60,17 +60,17 @@ export default function Header() {
               }
             >
               <li className="header__nav-subitem">
-                <a href="#" className="header__nav-sublink">
+                <a href="#" className="header__nav-sublink sublink">
                   Adversite
                 </a>
               </li>
               <li className="header__nav-subitem">
-                <a href="#" className="header__nav-sublink">
+                <a href="#" className="header__nav-sublink sublink">
                   Adversite
                 </a>
               </li>
               <li className="header__nav-subitem">
-                <a href="#" className="header__nav-sublink">
+                <a href="#" className="header__nav-sublink sublink">
                   Adversite
                 </a>
               </li>
@@ -86,24 +86,24 @@ export default function Header() {
               }
             >
               <li className="header__nav-subitem">
-                <a href="#" className="header__nav-sublink">
+                <a href="#" className="header__nav-sublink sublink">
                   Support
                 </a>
               </li>
               <li className="header__nav-subitem">
-                <a href="#" className="header__nav-sublink">
+                <a href="#" className="header__nav-sublink sublink">
                   Support
                 </a>
               </li>
               <li className="header__nav-subitem">
-                <a href="#" className="header__nav-sublink">
+                <a href="#" className="header__nav-sublink sublink">
                   Support
                 </a>
               </li>
             </DropdownLink>
           </li>
           <li className="header__nav-item">
-            <a href="#" className="header__nav-link">
+            <a href="#" className="header__nav-link link">
               Contact
             </a>
           </li>
