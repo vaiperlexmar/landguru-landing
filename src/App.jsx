@@ -1,6 +1,7 @@
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import QualityFeatures_1 from "./components/QualityFeatures_1";
+import CoreFeatures_1 from "./components/CoreFeatures_1";
 import shape_1 from "../src/assets/Rectangle 1.png";
 import shape_2 from "../src/assets/Rectangle 1.1.png";
 import circle_shape_1 from "../src/assets/circle.png";
@@ -30,6 +31,7 @@ function App() {
 
       <main className="main">
         <QualityFeatures_1 />
+        <CoreFeatures_1 />
       </main>
     </>
   );
