@@ -36,6 +36,7 @@ html {
 body {
   background-color: var(--light-black);
   font-family: "DM Sans", sans-serif;
+  overflow-x: hidden;
 }
 
 #container {
@@ -84,6 +85,27 @@ body {
 
 .heading-primary {
   font-size: var(--fs-1);
+}
+
+.heading_secondary {
+  font-size: var(--fs-2);
+  font-weight: 500;
+}
+
+.heading_tertiary {
+  font-size: var(--fs-3);
+  letter-spacing: -1.5px;
+}
+
+.heading_fourth {
+  font-size: var(--fs-4);
+}
+
+.subtitle {
+  font-size: var(--fs-7);
+  font-weight: bold;
+  letter-spacing: 2.1px;
+  text-transform: uppercase;
 }
 
 .paragraph {
@@ -209,6 +231,8 @@ body {
   background-color: #1e3c72;
   color: var(--white);
   padding-bottom: 5rem;
+  clip-path: circle(96.6% at 21% 30%);
+  margin-bottom: 6rem;
 }
 
 .hero__image {
@@ -272,5 +296,40 @@ body {
 .hero__sponsored-item {
   display: inline-block;
   margin-right: 2rem;
+  margin-bottom: 1rem;
+}
+
+/*-----------------------------------*\
+  #QUALITY FEATURES 1
+\*-----------------------------------*/
+
+.quality-features_1 {
+  text-align: center;
+}
+
+.quality-features_1__section-name {
+  margin-bottom: 1rem;
+  color: var(--navy);
+}
+
+.quality-features_1__heading {
+  margin-bottom: 3rem;
+}
+
+.quality-features_1__feature-list {
+  list-style: none;
+}
+
+.quality-features_1__feature {
+  margin-bottom: 5rem;
+  padding: 0 8vw;
+}
+
+.quality-features_1__feature-icon {
+  width: 25%;
+  margin-bottom: 1rem;
+}
+
+.quality-features_1__feature-heading {
   margin-bottom: 1rem;
 }
