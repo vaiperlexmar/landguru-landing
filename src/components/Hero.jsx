@@ -21,28 +21,24 @@ export default function Hero() {
           victory of the managments that supplies best design system guidelines
           ever.
         </p>
-
         <div className="hero__cta">
           <a className="hero__cta-btn btn btn_white">Get Started</a>
           <a href="#" className="hero__cta-video link">
             <img src={playCircle} alt="" /> Watch video
           </a>
         </div>
-
-        <p className="hero__sponsored paragraph">
-          Sponsored by:{" "}
-          <ul className="hero__sponsored-list">
-            <li className="hero__sponsored-item">
-              <img className="hero__sponsored-img" src={paypalIcon} alt="" />
-            </li>
-            <li className="hero__sponsored-item">
-              <img className="hero__sponsored-img" src={googleIcon} alt="" />
-            </li>
-            <li className="hero__sponsored-item">
-              <img className="hero__sponsored-img" src={dropboxIcon} alt="" />
-            </li>
-          </ul>{" "}
-        </p>
+        <p className="hero__sponsored paragraph">Sponsored by: </p>
+        <ul className="hero__sponsored-list">
+          <li className="hero__sponsored-item">
+            <img className="hero__sponsored-img" src={paypalIcon} alt="" />
+          </li>
+          <li className="hero__sponsored-item">
+            <img className="hero__sponsored-img" src={googleIcon} alt="" />
+          </li>
+          <li className="hero__sponsored-item">
+            <img className="hero__sponsored-img" src={dropboxIcon} alt="" />
+          </li>
+        </ul>{" "}
       </div>
     </section>
   );

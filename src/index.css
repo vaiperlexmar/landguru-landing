@@ -35,8 +35,8 @@ html {
 
 body {
   background-color: var(--light-black);
-  font-family: "DM Sans", sans-serif;
   overflow-x: hidden;
+  font-family: "DM Sans", sans-serif;
 }
 
 #container {
@@ -49,69 +49,69 @@ body {
 
 .btn {
   display: inline-block;
-  padding: 1.3rem 3.1rem;
+  cursor: pointer;
   border-radius: 5rem;
+  padding: 1.3rem 3.1rem;
   font-size: var(--fs-5);
   user-select: none;
-  cursor: pointer;
 }
 
 .btn_transparent {
-  background-color: transparent;
   border: 1.5px solid var(--white);
+  background-color: transparent;
   color: var(--white);
 }
 
 .btn_white {
   background-color: var(--white);
+  color: var(--black-navy);
   font-weight: 500;
   font-variation-settings: "wght" 500;
-  color: var(--black-navy);
 }
 
 .link {
-  text-decoration: none;
   color: var(--white);
   font-size: var(--fs-5);
+  text-decoration: none;
 }
 
 .sublink {
-  text-decoration: none;
+  display: block;
+  margin-bottom: 1rem;
   color: var(--white);
   font-size: var(--fs-6);
-  margin-bottom: 1rem;
-  display: block;
+  text-decoration: none;
 }
 
 .heading-primary {
-  font-size: var(--fs-1);
   margin-bottom: 3rem;
+  font-size: var(--fs-1);
 }
 
 .heading_secondary {
+  margin-bottom: 3rem;
   font-size: var(--fs-2);
   letter-spacing: -1.5px;
-  margin-bottom: 3rem;
 }
 
 .heading_tertiary {
+  margin-bottom: 3rem;
   font-size: var(--fs-3);
   letter-spacing: -1.5px;
-  margin-bottom: 3rem;
 }
 
 .heading_fourth {
-  font-size: var(--fs-4);
   margin-bottom: 3rem;
+  font-size: var(--fs-4);
 }
 
 .subtitle {
-  font-size: var(--fs-7);
-  font-weight: bold;
-  letter-spacing: 2.1px;
-  text-transform: uppercase;
   margin-bottom: 1rem;
   color: var(--navy);
+  font-weight: bold;
+  font-size: var(--fs-7);
+  letter-spacing: 2.1px;
+  text-transform: uppercase;
 }
 
 .paragraph {
@@ -124,11 +124,11 @@ body {
 
 .header {
   display: flex;
+  position: relative;
   justify-content: space-between;
   align-items: center;
   background-color: var(--dark-navy);
   padding: 1.5rem 4vw;
-  position: relative;
 }
 
 .header__shapes-container {
@@ -137,36 +137,36 @@ body {
 
 .header__logo {
   display: flex;
-  font-size: var(--fs-3);
   align-items: center;
   gap: 1rem;
-  font-weight: bold;
-  color: var(--white);
   z-index: 999;
+  color: var(--white);
+  font-weight: bold;
+  font-size: var(--fs-3);
   font-family: "Poppins", sans-serif;
 }
 
 .header__logo-img {
-  width: 3rem;
   filter: invert(100%);
+  width: 3rem;
 }
 
 .header__nav {
   display: none;
   position: absolute;
-  background-color: var(--dark-navy);
   top: 0;
   left: 0;
-  text-align: center;
-  width: 100%;
-  padding: 10rem 0 2rem;
   z-index: 998;
+  background-color: var(--dark-navy);
+  padding: 10rem 0 2rem;
+  width: 100%;
+  text-align: center;
 }
 
 .header__nav-list {
+  margin-bottom: 3rem;
   font-family: "DM Sans", sans-serif;
   list-style: none;
-  margin-bottom: 3rem;
 }
 
 .header__nav-item {
@@ -175,8 +175,8 @@ body {
 
 .header__nav-dropdown {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   user-select: none;
 }
 
@@ -186,9 +186,9 @@ body {
 }
 
 .header__nav-dropdown img {
-  width: 1.5rem;
-  margin-left: 0.5rem;
   filter: invert(100%);
+  margin-left: 0.5rem;
+  width: 1.5rem;
 }
 
 .header__shapes-1,
@@ -200,8 +200,8 @@ body {
 
 .header__shapes-1,
 .header__shapes-2 {
-  height: 60%;
   width: 50%;
+  height: 60%;
 }
 
 .header__shapes-3 {
@@ -215,8 +215,8 @@ body {
 }
 
 .header__shapes-2 {
-  bottom: 0;
   right: 0;
+  bottom: 0;
 }
 
 .header__circle-shape-1 {
@@ -234,11 +234,11 @@ body {
 \*-----------------------------------*/
 
 .hero {
-  background-color: #1e3c72;
-  color: var(--white);
-  padding-bottom: 5rem;
   clip-path: circle(96.6% at 21% 30%);
   margin-bottom: 6rem;
+  background-color: #1e3c72;
+  padding-bottom: 5rem;
+  color: var(--white);
 }
 
 .hero__image {
@@ -246,25 +246,25 @@ body {
 }
 
 .hero__mockup {
+  position: relative;
+  z-index: 3;
   width: 100%;
   height: auto;
-  z-index: 3;
-  position: relative;
 }
 
 .hero__dot-pattern {
   position: absolute;
-  width: 12rem;
-  height: 14rem;
   top: -2%;
   left: 60%;
+  width: 12rem;
+  height: 14rem;
 }
 
 .hero__textbox {
-  padding: 0 4vw;
-  text-align: center;
   position: relative;
   z-index: 999;
+  padding: 0 4vw;
+  text-align: center;
 }
 
 .hero__heading {
@@ -277,9 +277,9 @@ body {
 
 .hero__cta {
   display: flex;
+  justify-content: center;
   align-items: center;
   gap: 2rem;
-  justify-content: center;
   margin-bottom: 2rem;
 }
 
@@ -290,8 +290,8 @@ body {
 }
 
 .hero__cta-video img {
-  width: 2.8rem;
   filter: invert(100%);
+  width: 2.8rem;
 }
 
 .hero__sponsored-list {
@@ -309,31 +309,31 @@ body {
   #QUALITY FEATURES 1
 \*-----------------------------------*/
 
-.quality-features_1 {
-  text-align: center;
+.features-list {
   margin-bottom: 6rem;
+  text-align: center;
 }
 
-.quality-features_1__section-name {
+.features-list__section-name {
   margin-bottom: 1rem;
   color: var(--navy);
 }
 
-.quality-features_1__feature-list {
+.features-list__feature-list {
   list-style: none;
 }
 
-.quality-features_1__feature {
+.features-list__feature {
   margin-bottom: 5rem;
   padding: 0 8vw;
 }
 
-.quality-features_1__feature-icon {
-  width: 25%;
+.features-list__feature-icon {
   margin-bottom: 1rem;
+  width: 25%;
 }
 
-.quality-features_1__feature-heading {
+.features-list__feature-heading {
   margin-bottom: 1rem;
 }
 
@@ -342,13 +342,14 @@ body {
 \*-----------------------------------*/
 
 .core-features_1 {
-  text-align: center;
+  margin-bottom: 6rem;
   padding: 0 4vw;
+  text-align: center;
 }
 
 .core-features_1__image {
-  width: 80%;
   margin-bottom: 3rem;
+  width: 80%;
 }
 
 .core-features_1__feature-list {
@@ -356,11 +357,11 @@ body {
 }
 
 .core-features_1__feature {
-  padding: 2rem 1rem;
-  border-radius: 1rem;
   -webkit-box-shadow: 0px 8px 24px 0px rgba(69, 88, 157, 0.07);
   -moz-box-shadow: 0px 8px 24px 0px rgba(69, 88, 157, 0.07);
   box-shadow: 0px 8px 24px 0px rgba(69, 88, 157, 0.07);
+  border-radius: 1rem;
+  padding: 2rem 1rem;
 }
 
 .core-features_1__feature-icon {
