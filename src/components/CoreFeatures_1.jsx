@@ -5,10 +5,10 @@ import smartFeaturesIcon from "../assets/core-features_1/smart-features.svg";
 export default function CoreFeatures_1() {
   return (
     <section className="core-features_1">
-      <p className="core-features_1__section-name subtitle">Core Features</p>
-      <h3 className="core-features_1__heading heading_secondary">
+      <p className="subtitle">Core Features</p>
+      <h2 className="heading_secondary">
         Smart Jackpotsthat you may love this anytime & anywhere
-      </h3>
+      </h2>
 
       <img className="core-features_1__image" src={phoneMockup} alt="" />
 
