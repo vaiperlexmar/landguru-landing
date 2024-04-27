@@ -5,6 +5,7 @@ import CoreFeatures_1 from "./components/CoreFeatures_1";
 import QualityFeatures_2 from "./components/QualityFeatures_2";
 import Companies from "./components/Companies";
 import FunctionsList from "./components/FunctionsList";
+import Reviews from "./components/Reviews";
 
 import shape_1 from "../src/assets/Rectangle 1.png";
 import shape_2 from "../src/assets/Rectangle 1.1.png";
@@ -39,6 +40,7 @@ function App() {
         <QualityFeatures_2 />
         <Companies />
         <FunctionsList />
+        <Reviews />
       </main>
     </>
   );

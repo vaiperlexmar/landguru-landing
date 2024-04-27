@@ -1,0 +1,63 @@
+{
+  "reviews": [
+    {
+      "id": 1,
+      "rating": 4.5,
+      "heading": "Modern look & trending design",
+      "reviewText": "Get working experience to work with this amazing team & in future want to work together for bright future projects and also make deposit to freelancer.",
+      "account": {
+        "name": "Denny Hilguston",
+        "nickname": "@denny.hil",
+        "avatar": "https://randomuser.me/api/portraits/men/14.jpg"
+      }
+    },
+
+    {
+      "id": 2,
+      "rating": 4,
+      "heading": "Modern look & trending design",
+      "reviewText": "Get working experience to work with this amazing team & in future want to work together for bright future projects and also make deposit to freelancer.",
+      "account": {
+        "name": "Denny Hilguston",
+        "nickname": "@denny.hil",
+        "avatar": "https://randomuser.me/api/portraits/men/14.jpg"
+      }
+    },
+
+    {
+      "id": 3,
+      "rating": 4,
+      "heading": "Layout and organized layers",
+      "reviewText": "Get working experience to work with this amazing team & in future want to work together for bright future projects and also make deposit to freelancer.",
+      "account": {
+        "name": "Denny Hilguston",
+        "nickname": "@denny.hil",
+        "avatar": "https://randomuser.me/api/portraits/men/14.jpg"
+      }
+    },
+
+    {
+      "id": 4,
+      "rating": 3.5,
+      "heading": "Modern look & trending design",
+      "reviewText": "Get working experience to work with this amazing team & in future want to work together for bright future projects and also make deposit to freelancer.",
+      "account": {
+        "name": "Denny Hilguston",
+        "nickname": "@denny.hil",
+        "avatar": "https://randomuser.me/api/portraits/men/14.jpg"
+      }
+    },
+
+    {
+      "id": 5,
+      "rating": 5,
+      "heading": "Modern look & trending design",
+      "reviewText": "Get working experience to work with this amazing team & in future want to work together for bright future projects and also make deposit to freelancer.",
+      "account": {
+        "name": "Denny Hilguston",
+        "nickname": "@denny.hil",
+        "avatar": "https://randomuser.me/api/portraits/men/14.jpg"
+      }
+    }
+  ]
+}

@@ -1,4 +1,4 @@
-import FeatureList from "./FeatureList.jsx/FeatureList";
+import FeatureList from "./FeatureList/FeatureList";
 import vectorEditingIcon from "../assets/quality-features_1/vector-editing.svg";
 import customizeIcon from "../assets/quality-features_1/customize-monitoring.svg";
 import qualityShortPeriodIcon from "../assets/quality-features_1/quality-short-period.svg";

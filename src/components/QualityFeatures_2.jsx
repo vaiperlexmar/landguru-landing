@@ -1,4 +1,4 @@
-import FeatureList from "./FeatureList.jsx/FeatureList";
+import FeatureList from "./FeatureList/FeatureList";
 import smartFeaturesIcon from "../assets/quality-features_2/smart-features.svg";
 import fastPerformanceIcon from "../assets/quality-features_2/fast-performance.svg";
 import unlimitedContentIcon from "../assets/quality-features_2/unlimited-content.svg";
