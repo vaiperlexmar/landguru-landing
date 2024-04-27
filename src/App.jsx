@@ -4,6 +4,8 @@ import QualityFeatures_1 from "./components/QualityFeatures_1";
 import CoreFeatures_1 from "./components/CoreFeatures_1";
 import QualityFeatures_2 from "./components/QualityFeatures_2";
 import Companies from "./components/Companies";
+import FunctionsList from "./components/FunctionsList";
+
 import shape_1 from "../src/assets/Rectangle 1.png";
 import shape_2 from "../src/assets/Rectangle 1.1.png";
 import circle_shape_1 from "../src/assets/circle.png";
@@ -36,6 +38,7 @@ function App() {
         <CoreFeatures_1 />
         <QualityFeatures_2 />
         <Companies />
+        <FunctionsList />
       </main>
     </>
   );

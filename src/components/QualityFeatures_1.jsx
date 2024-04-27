@@ -30,7 +30,7 @@ export default function QualityFeatures_1() {
   return (
     <section className="features-list quality-features_1">
       <p className="subtitle">Quality features</p>
-      <h3 className="heading_tertiary">Meet exciting feature of app</h3>
+      <h3 className="heading-tertiary">Meet exciting feature of app</h3>
 
       <FeatureList items={qualityFeatures} listName="features-list" />
     </section>

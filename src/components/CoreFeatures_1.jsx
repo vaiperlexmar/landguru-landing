@@ -6,7 +6,7 @@ export default function CoreFeatures_1() {
   return (
     <section className="core-features_1">
       <p className="subtitle">Core Features</p>
-      <h2 className="heading_secondary">
+      <h2 className="heading-secondary">
         Smart Jackpotsthat you may love this anytime & anywhere
       </h2>
 
@@ -21,7 +21,7 @@ export default function CoreFeatures_1() {
               alt=""
             />
             <div className="core-features_1__feature-content">
-              <h4 className="core-features_1__feature-heading heading_fourth">
+              <h4 className="core-features_1__feature-heading heading-fourth">
                 Smart Features
               </h4>
 
@@ -41,7 +41,7 @@ export default function CoreFeatures_1() {
               alt=""
             />
             <div className="core-features_1__feature-content">
-              <h4 className="core-features_1__feature-heading heading_fourth">
+              <h4 className="core-features_1__feature-heading heading-fourth">
                 Secure Contents
               </h4>
 
