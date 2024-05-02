@@ -3,6 +3,7 @@ import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import arrowActive from "../../assets/carousel/arrow_active.svg";
 import arrowDisabled from "../../assets/carousel/arrow_disabled.svg";
+import { motion, AnimatePresence } from "framer-motion";
 
 export default function ExternalCarouselControls(props) {
   const [state, setState] = useState({
@@ -32,7 +33,6 @@ export default function ExternalCarouselControls(props) {
 
   const updateCurrentSlide = (index) => {
     const { currentSlide } = state;
-    console.log(state);
 
     if (currentSlide !== index) {
       setState({
@@ -59,12 +59,22 @@ export default function ExternalCarouselControls(props) {
           disabled={state.currentSlide === 0}
         >
           {state.currentSlide === 0 ? (
-            <img src={arrowDisabled} alt="" />
+            <AnimatePresence>
+              <motion.img
+                src={arrowDisabled}
+                alt=""
+                initial={{ x: 100, opacity: 0 }}
+                animate={{ x: 0, opacity: 1 }}
+                exit={{ x: -300, opacity: 0 }}
+              />
+            </AnimatePresence>
           ) : (
-            <img
+            <motion.img
               src={arrowActive}
               alt=""
-              style={{ transform: "rotate(180deg)" }}
+              initial={{ x: 100, opacity: 0, rotate: 180 }}
+              animate={{ x: 0, opacity: 1 }}
+              exit={{ x: -300, opacity: 0 }}
             />
           )}
         </button>
@@ -75,13 +85,23 @@ export default function ExternalCarouselControls(props) {
           disabled={state.currentSlide === props.children.length - 1}
         >
           {state.currentSlide === props.children.length - 1 ? (
-            <img
-              src={arrowDisabled}
-              alt=""
-              style={{ transform: "rotate(180deg)" }}
-            />
+            <AnimatePresence>
+              <motion.img
+                src={arrowDisabled}
+                alt=""
+                initial={{ x: -100, opacity: 0, rotate: 180 }}
+                animate={{ x: 0, opacity: 1 }}
+                exit={{ x: 300, opacity: 0 }}
+              />
+            </AnimatePresence>
           ) : (
-            <img src={arrowActive} alt="" />
+            <motion.img
+              src={arrowActive}
+              alt=""
+              initial={{ x: -100, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              exit={{ x: 300, opacity: 0 }}
+            />
           )}
         </button>
       </div>
