@@ -453,3 +453,32 @@ section {
   left: calc(0% + 30vw);
   transform: rotate(-90deg) scaleX(-1);
 }
+
+/*-----------------------------------*\
+  #REVIEWS
+\*-----------------------------------*/
+
+.reviews {
+  margin-bottom: 6rem;
+}
+
+/*-----------------------------------*\
+  #CORE FEATURES 2
+\*-----------------------------------*/
+
+.core-features_2 {
+  background-image: url("../src/assets/core-features_2/Bg.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 10% 0%;
+  padding-bottom: 3rem;
+}
+
+.core-features_2__image {
+  margin-bottom: 3rem;
+  width: 80%;
+}
+
+.core-features_2 .paragraph {
+  margin-bottom: 3rem;
+}
