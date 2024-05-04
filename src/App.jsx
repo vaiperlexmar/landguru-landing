@@ -7,6 +7,7 @@ import Companies from "./components/Companies";
 import FunctionsList from "./components/FunctionsList";
 import Reviews from "./components/Reviews";
 import CoreFeatures_2 from "./components/CoreFeatures_2";
+import Pricing from "./components/Pricing";
 
 import shape_1 from "../src/assets/Rectangle 1.png";
 import shape_2 from "../src/assets/Rectangle 1.1.png";
@@ -43,6 +44,7 @@ function App() {
         <FunctionsList />
         <Reviews />
         <CoreFeatures_2 />
+        <Pricing />
       </main>
     </>
   );

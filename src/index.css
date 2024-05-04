@@ -1,5 +1,6 @@
 @import url("styles/hamburger.css");
 @import url("styles/reviewCard.css");
+@import url("styles/priceItem.css");
 
 :root {
   /* mobile font sizes */
@@ -17,6 +18,7 @@
   --medium-navy: #22437d;
   --navy: #2a5298;
   --white: #fff;
+  --green: #00c48c;
 }
 
 /*-----------------------------------*\
@@ -471,7 +473,8 @@ section {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 10% 0%;
-  padding-bottom: 3rem;
+  padding-bottom: 6rem;
+  margin-bottom: 0;
 }
 
 .core-features_2__image {
@@ -480,5 +483,19 @@ section {
 }
 
 .core-features_2 .paragraph {
+  margin-bottom: 3rem;
+}
+
+/*-----------------------------------*\
+  #PRICING
+\*-----------------------------------*/
+
+.pricing {
+  padding: 4.5rem 4vw;
+  margin-bottom: 6rem;
+  background: linear-gradient(68deg, var(--dark-navy) 0%, var(--navy) 100%);
+}
+
+.pricing .heading-tertiary:nth-child(2) {
   margin-bottom: 3rem;
 }
