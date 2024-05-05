@@ -59,5 +59,74 @@
         "avatar": "https://randomuser.me/api/portraits/men/14.jpg"
       }
     }
+  ],
+
+  "pricing": [
+    {
+      "id": 1,
+      "name": "Free Plan",
+      "description": "For Small teams or office",
+      "price": 0,
+      "features": [
+        {
+          "id": 1,
+          "text": "Ultimate access to all course, exercises and assessments",
+          "checked": true
+        },
+        {
+          "id": 2,
+          "text": "Free acess for all kind of exercise corrections with downloads.",
+          "checked": true
+        },
+        {
+          "id": 3,
+          "text": "Total assessment corrections with free download access system",
+          "checked": true
+        },
+        {
+          "id": 4,
+          "text": "Unlimited download of courses on the mobile app contents",
+          "checked": false
+        },
+        {
+          "id": 5,
+          "text": "Download and print courses and exercises in PDF",
+          "checked": false
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Premium",
+      "description": "For startup enterprise",
+      "price": 49.99,
+      "features": [
+        {
+          "id": 1,
+          "text": "Ultimate access to all course, exercises and assessments",
+          "checked": true
+        },
+        {
+          "id": 2,
+          "text": "Free acess for all kind of exercise corrections with downloads.",
+          "checked": true
+        },
+        {
+          "id": 3,
+          "text": "Total assessment corrections with free download access system",
+          "checked": true
+        },
+        {
+          "id": 4,
+          "text": "Unlimited download of courses on the mobile app contents",
+          "checked": true
+        },
+        {
+          "id": 5,
+          "text": "Download and print courses and exercises in PDF",
+          "checked": true
+        }
+      ]
+    }
   ]
 }

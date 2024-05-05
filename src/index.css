@@ -17,6 +17,7 @@
   --dark-navy: #1e3c72;
   --medium-navy: #22437d;
   --navy: #2a5298;
+  --navy-gray: #343d48;
   --white: #fff;
   --green: #00c48c;
 }
@@ -494,8 +495,4 @@ section {
   padding: 4.5rem 4vw;
   margin-bottom: 6rem;
   background: linear-gradient(68deg, var(--dark-navy) 0%, var(--navy) 100%);
-}
-
-.pricing .heading-tertiary:nth-child(2) {
-  margin-bottom: 3rem;
 }
