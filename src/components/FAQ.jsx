@@ -1,6 +1,9 @@
+import { useState } from "react";
 import Accordion from "./Accordion/Accordion";
 
 export default function FAQ() {
+  const [activeIndex, setActiveIndex] = useState(-1);
+
   const faqItems = [
     {
       title: "How to contact with riders emergency ?",
@@ -32,7 +35,16 @@ export default function FAQ() {
           const { title, text } = item;
           return (
             <li className="faq__item" key={index}>
-              <Accordion title={title} text={text} />
+              <Accordion
+                title={title}
+                text={text}
+                isActive={activeIndex === index}
+                onShow={() =>
+                  activeIndex === index
+                    ? setActiveIndex(-1)
+                    : setActiveIndex(index)
+                }
+              />
             </li>
           );
         })}

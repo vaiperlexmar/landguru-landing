@@ -1,0 +1,26 @@
+.accordion {
+  margin-bottom: 2rem;
+}
+
+.accordion__title {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  border: none;
+  background: transparent;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+  font-size: var(--fs-5);
+  text-align: start;
+}
+
+.accordion__text {
+  padding-left: 3rem;
+  font-size: var(--fs-6);
+}
+
+.accordion hr {
+  margin: 1rem 0;
+  color: #e5ecf4;
+}

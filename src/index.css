@@ -1,6 +1,7 @@
 @import url("styles/hamburger.css");
 @import url("styles/reviewCard.css");
 @import url("styles/priceItem.css");
+@import url("styles/accordion.css");
 
 :root {
   /* mobile font sizes */
@@ -513,8 +514,10 @@ section {
 
 .faq {
   margin-bottom: 6rem;
+  padding: 0 4vw;
 }
 
-.faq__item {
+.faq__list {
+  list-style: none;
   text-align: start;
 }
