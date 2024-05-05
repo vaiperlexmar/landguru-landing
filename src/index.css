@@ -495,4 +495,26 @@ section {
   padding: 4.5rem 4vw;
   margin-bottom: 6rem;
   background: linear-gradient(68deg, var(--dark-navy) 0%, var(--navy) 100%);
+  position: relative;
+}
+
+.pricing__shape {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+/*-----------------------------------*\
+  #FAQ
+\*-----------------------------------*/
+
+.faq {
+  margin-bottom: 6rem;
+}
+
+.faq__item {
+  text-align: start;
 }

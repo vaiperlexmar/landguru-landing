@@ -24,9 +24,10 @@ export default function PricingDropdown({ plan, color }) {
 
   // transformation of features list
 
-  const planFeatures = plan.features.map((feature) => {
+  const planFeatures = plan.features.map((feature, index) => {
     return (
       <li
+        key={index}
         className={`${
           feature.checked
             ? "pricing__list-item_checked"
@@ -90,7 +91,7 @@ export default function PricingDropdown({ plan, color }) {
         className="pricing__list"
         animate={{
           opacity: isOpen ? 1 : 0,
-          height: isOpen ? "auto" : 0,
+          height: isOpen ? "100%" : 0,
         }}
         transition={{
           duration: 0.75,
