@@ -557,3 +557,23 @@ section {
   display: inline-block;
   margin-bottom: 1.2rem;
 }
+
+@media (min-width: 550px) {
+  .function__arrow {
+    bottom: -8vw;
+    width: 12vw;
+  }
+}
+
+@media (min-width: 670px) {
+  .function__arrow {
+    bottom: -7vw;
+    width: 10vw;
+    right: calc(0% + 34vw);
+  }
+
+  .function__arrow_right {
+    left: calc(0% + 34vw);
+    transform: rotate(-90deg) scaleX(-1);
+  }
+}
