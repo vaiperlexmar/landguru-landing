@@ -95,6 +95,10 @@ section {
   text-decoration: none;
 }
 
+.link_dark {
+  color: #02073e;
+}
+
 .sublink {
   display: block;
   margin-bottom: 1rem;
@@ -520,4 +524,36 @@ section {
 .faq__list {
   list-style: none;
   text-align: start;
+}
+
+/*-----------------------------------*\
+  #FOOTER
+\*-----------------------------------*/
+
+.footer {
+  margin-bottom: 6rem;
+  text-align: center;
+  padding: 0 4vw;
+}
+
+.footer__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  row-gap: 3rem;
+}
+
+.footer__list {
+  list-style: none;
+}
+
+.footer__hr {
+  color: #e5ecf4;
+  width: 95%;
+  margin: 0 auto 2.5rem;
+}
+
+.footer__link {
+  display: inline-block;
+  margin-bottom: 1.2rem;
 }
