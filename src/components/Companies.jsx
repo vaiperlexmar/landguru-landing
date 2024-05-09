@@ -3,8 +3,8 @@ import companiesImg from "../assets/companies/companies.png";
 export default function Companies() {
   return (
     <section className="companies">
-      <img src={companiesImg} alt="" />
-      <div className="text__box">
+      <img className="companies__image" src={companiesImg} alt="" />
+      <div className="companies__text-box">
         <p className="subtitle">Core features</p>
         <h2 className="heading-secondary">
           Smart Jackpots that you may love this anytime & anywhere
