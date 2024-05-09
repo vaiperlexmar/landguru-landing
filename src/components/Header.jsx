@@ -1,16 +1,38 @@
 import { useState } from "react";
 import { motion, cubicBezier } from "framer-motion";
+import { useMediaQuery } from "@mui/material";
 import logo from "../assets/logo.svg";
 import DropdownLink from "./DropdownLink/DropdownLink";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const [activeIndex, setActiveIndex] = useState(-1);
+  const isMobile = useMediaQuery("(max-width:768px)");
 
   function toggleHamburger() {
     setIsOpen(!isOpen);
     setActiveIndex(-1); // To close the dropdown when closing the hamburger
   }
+
+  const attributes = isMobile
+    ? {
+        animate: {
+          display: isOpen ? "block" : "none",
+          y: isOpen ? "0" : "-100%",
+          opacity: isOpen ? 0.99 : 0.2,
+        },
+
+        transition: {
+          duration: 0.75,
+          type: "tween",
+          ease: cubicBezier(0.25, 0.46, 0.45, 0.94),
+        },
+
+        style: {
+          display: "none",
+        },
+      }
+    : { style: { display: "flex", transform: "none" } };
 
   return (
     <header className="header">
@@ -31,19 +53,7 @@ export default function Header() {
 
       <motion.nav
         className={`header__nav ${isOpen ? "open" : ""}`}
-        animate={{
-          display: isOpen ? "block" : "none",
-          y: isOpen ? "0" : "-100%",
-          opacity: isOpen ? 0.99 : 0.2,
-          style: {
-            backgroundColor: isOpen ? "transparent" : "var(--dark-navy)",
-          },
-        }}
-        transition={{
-          duration: 0.75,
-          type: "tween",
-          ease: cubicBezier(0.25, 0.46, 0.45, 0.94),
-        }}
+        {...attributes}
       >
         <ul className="header__nav-list">
           <li className="header__nav-item">
