@@ -7,7 +7,7 @@ import DropdownLink from "./DropdownLink/DropdownLink";
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const [activeIndex, setActiveIndex] = useState(-1);
-  const isMobile = useMediaQuery("(max-width:768px)");
+  const isMobile = useMediaQuery("(max-width:767.5px)");
 
   function toggleHamburger() {
     setIsOpen(!isOpen);
