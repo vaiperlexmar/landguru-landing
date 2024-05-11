@@ -10,12 +10,12 @@ export default function CoreFeatures_2() {
         <h2 className="heading-secondary">
           Secure Payment Transaction System with #1 Ranking
         </h2>
-        <p className="paragraph">
+        <p className="paragraph paragraph_high-line ">
           Get your tests delivered at let home collect sample from the victory
           of the managments that supplies best design system guidelines ever.
           Get your tests delivered at let home collect sample.
         </p>
-        <button className="btn btn_navy">Learn more</button>
+        <button className="btn btn_dark-navy">Learn more</button>
       </div>
     </section>
   );

@@ -9,12 +9,12 @@ export default function Companies() {
         <h2 className="heading-secondary">
           Smart Jackpots that you may love this anytime & anywhere
         </h2>
-        <p className="paragraph">
+        <p className="paragraph paragraph_high-line">
           Get your tests delivered at let home collect sample from the victory
           of the managments that supplies best design system guidelines ever.
           Get your tests delivered at let home collect sample.
         </p>
-        <button className="btn btn_navy">Get Started</button>
+        <button className="btn btn_dark-navy">Get Started</button>
       </div>
     </section>
   );

@@ -101,6 +101,13 @@ section {
   font-variation-settings: "wght" 500;
 }
 
+.btn_dark-navy {
+  background-color: var(--dark-navy);
+  color: var(--white);
+  font-weight: 500;
+  font-variation-settings: "wght" 500;
+}
+
 .link {
   color: var(--white);
   font-size: var(--fs-5);
@@ -161,6 +168,10 @@ section {
 
 .paragraph {
   font-size: var(--fs-5);
+}
+
+.paragraph_high-line {
+  line-height: 2.3;
 }
 
 /*-----------------------------------*\
@@ -769,10 +780,6 @@ section {
     margin-bottom: 2rem;
   }
 
-  .companies__text-box p {
-    line-height: 2.3;
-  }
-
   .companies__image {
     grid-column: 2;
   }
@@ -818,5 +825,25 @@ section {
   .slider-wrapper {
     display: grid;
     grid-template-columns: 50% 50%;
+  }
+
+  /*-----------------------------------*\
+    #CORE FEATURES 2
+  \*-----------------------------------*/
+
+  .core-features_2 {
+    display: grid;
+    grid-template-columns: 60% 1fr;
+    text-align: start;
+    padding: 6.5rem 1rem 0 0;
+    align-items: center;
+  }
+
+  .core-features_2 .heading-secondary {
+    margin-bottom: 2rem;
+  }
+
+  .core-features_2__image {
+    max-width: 604px;
   }
 }
