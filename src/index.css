@@ -810,4 +810,13 @@ section {
   .functions__shape-1 {
     display: none;
   }
+
+  /*-----------------------------------*\
+    #REVIEWS
+  \*-----------------------------------*/
+
+  .slider-wrapper {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
 }
