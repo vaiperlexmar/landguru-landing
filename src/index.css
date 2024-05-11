@@ -433,6 +433,10 @@ section {
   color: var(--white);
 }
 
+.functions__shape {
+  display: none;
+}
+
 .functions__list {
   list-style: none;
 }
@@ -771,5 +775,39 @@ section {
 
   .companies__image {
     grid-column: 2;
+  }
+
+  /*-----------------------------------*\
+    #FUNCTIONS
+  \*-----------------------------------*/
+
+  .functions {
+    position: relative;
+  }
+
+  .functions__shape-container {
+    position: relative;
+  }
+
+  .functions__shape {
+    position: absolute;
+    display: block;
+    height: auto;
+  }
+
+  .functions__circle-shape_top-side {
+    left: -10%;
+    width: 45vw;
+    top: -33vw;
+  }
+
+  .functions__circle-shape_bottom-side {
+    transform: rotate(180deg);
+    top: 87vw;
+    left: 28vw;
+  }
+
+  .functions__shape-1 {
+    display: none;
   }
 }

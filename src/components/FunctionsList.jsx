@@ -1,8 +1,28 @@
 import arrow from "../assets/functional-list/arrow.svg";
+import circle_shape_1 from "../assets/shapes/shape_circle.svg";
+import shape_1 from "../assets/shapes/shape_rectangle.svg";
 
 export default function FunctionsList() {
   return (
     <section className="functions">
+      <div className="functions__shape-container">
+        <img
+          className="functions__shape functions__circle-shape functions__circle-shape_top-side"
+          src={circle_shape_1}
+          alt=""
+        />
+        <img
+          className="functions__shape functions__circle-shape functions__circle-shape_bottom-side"
+          src={circle_shape_1}
+          alt=""
+        />
+        <img
+          className="functions__shape functions__shape-1"
+          src={shape_1}
+          alt=""
+        />
+      </div>
+
       <p className="subtitle subtitle_gray">Whats the function</p>
       <h3 className="heading-tertiary heading-tertiary_white">
         Let’s see how it works
