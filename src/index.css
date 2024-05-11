@@ -872,4 +872,12 @@ section {
   .pricing__item_navy .pricing__header-text {
     padding-top: 15%;
   }
+
+  /*-----------------------------------*\
+    #FAQ
+  \*-----------------------------------*/
+
+  .faq {
+    padding: 0 15vw;
+  }
 }
