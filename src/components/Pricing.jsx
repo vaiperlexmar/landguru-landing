@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import PricingDropdown from "./PricingDropdown/PricingDropdown";
 import shapeCircle from "../assets/shapes/shape_circle.svg";
 import shapeRectangle from "../assets/shapes/shape_rectangle.svg";
+
 export default function Pricing() {
   const [data, setData] = useState(null);
 
@@ -49,15 +50,17 @@ export default function Pricing() {
         Let’s see how it works
       </h3>
 
-      {data &&
-        data.map((plan) => {
-          if (plan.id % 2 === 0) {
-            return (
-              <PricingDropdown key={plan.id} plan={plan} color={"white"} />
-            );
-          }
-          return <PricingDropdown key={plan.id} plan={plan} color={"navy"} />;
-        })}
+      <div className="pricing__list-container">
+        {data &&
+          data.map((plan) => {
+            if (plan.id % 2 === 0) {
+              return (
+                <PricingDropdown key={plan.id} plan={plan} color={"white"} />
+              );
+            }
+            return <PricingDropdown key={plan.id} plan={plan} color={"navy"} />;
+          })}
+      </div>
     </section>
   );
 }

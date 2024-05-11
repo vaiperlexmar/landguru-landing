@@ -1,17 +1,56 @@
 import { useState, useRef, useEffect } from "react";
 import { motion, cubicBezier } from "framer-motion";
 import chevroneDown from "../../assets/pricing/chevrone.svg";
+import { useMediaQuery } from "@mui/material";
 
 export default function PricingDropdown({ plan, color }) {
   const [isOpen, setIsOpen] = useState(false);
   const ref = useRef(null);
+  const isMobile = useMediaQuery("(max-width:767.5px)");
 
   function handleClick() {
-    setIsOpen(!isOpen);
+    if (isMobile) {
+      setIsOpen(!isOpen);
+    }
   }
 
+  // Tablet and desktop version
+
+  const attributesOfList = isMobile
+    ? {
+        animate: {
+          opacity: isOpen ? 1 : 0,
+          height: isOpen ? "100%" : 0,
+        },
+        transition: {
+          duration: 0.75,
+          type: "tween",
+          ease: cubicBezier(0.25, 0.46, 0.45, 0.94),
+          opacity: { duration: 0.5 },
+        },
+      }
+    : {
+        style: {
+          display: "block",
+          height: "100%",
+          opacity: 1,
+        },
+      };
+
+  const attributesOfHeader = isMobile
+    ? {
+        animate: {
+          marginBottom: isOpen ? "2rem" : "1rem",
+        },
+      }
+    : {
+        style: {
+          marginBottom: "2rem",
+        },
+      };
+
   useEffect(() => {
-    if (!isOpen) {
+    if (!isOpen && isMobile) {
       const timer = setTimeout(() => {
         ref.current.style.display = "none";
       }, 500);
@@ -51,9 +90,7 @@ export default function PricingDropdown({ plan, color }) {
       <motion.header
         className="pricing__header"
         onClick={() => handleClick()}
-        animate={{
-          marginBottom: isOpen ? "2rem" : "1rem",
-        }}
+        {...attributesOfHeader}
       >
         <div className="pricing__header-text">
           {plan.name === "Premium" ? (
@@ -76,6 +113,7 @@ export default function PricingDropdown({ plan, color }) {
             <motion.img
               animate={{
                 rotate: isOpen ? 180 : 0,
+                opacity: !isMobile ? 0 : 1,
               }}
               transition={{
                 duration: 0.5,
@@ -87,20 +125,7 @@ export default function PricingDropdown({ plan, color }) {
         </div>
       </motion.header>
 
-      <motion.ul
-        className="pricing__list"
-        animate={{
-          opacity: isOpen ? 1 : 0,
-          height: isOpen ? "100%" : 0,
-        }}
-        transition={{
-          duration: 0.75,
-          type: "tween",
-          ease: cubicBezier(0.25, 0.46, 0.45, 0.94),
-          opacity: { duration: 0.5 },
-        }}
-        ref={ref}
-      >
+      <motion.ul className="pricing__list" {...attributesOfList} ref={ref}>
         {planFeatures}
 
         <button className="btn">Signup Now</button>

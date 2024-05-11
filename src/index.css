@@ -846,4 +846,30 @@ section {
   .core-features_2__image {
     max-width: 604px;
   }
+
+  /*-----------------------------------*\
+    #PRICING
+  \*-----------------------------------*/
+
+  .pricing__list-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .pricing__header {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+
+  .pricing__price-container {
+    justify-self: end;
+  }
+
+  /* Special style for free plan */
+
+  .pricing__item_navy .pricing__header-text {
+    padding-top: 15%;
+  }
 }
