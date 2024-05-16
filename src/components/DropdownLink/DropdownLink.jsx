@@ -1,7 +1,13 @@
 import { motion, cubicBezier } from "framer-motion";
 import chevroneDown from "../../assets/chevrone-down.svg";
 
-export default function DropdownLink({ name, children, isActive, onShow }) {
+export default function DropdownLink({
+  name,
+  children,
+  isActive,
+  onShow,
+  onHide,
+}) {
   const variantsSubNav = {
     open: { height: "auto", y: "0", opacity: 1 },
     closed: {
@@ -13,12 +19,18 @@ export default function DropdownLink({ name, children, isActive, onShow }) {
   };
 
   return (
-    <>
+    <div
+      className="dropdown__wrapper"
+      onClick={onShow}
+      onMouseEnter={onShow}
+      onMouseLeave={onHide}
+    >
       <span
         className={`header__nav-link link header__nav-dropdown ${
           isActive ? "open" : ""
         }`}
         onClick={onShow}
+        onMouseEnter={onShow}
       >
         {name}{" "}
         <motion.img
@@ -42,6 +54,6 @@ export default function DropdownLink({ name, children, isActive, onShow }) {
       >
         {children}
       </motion.ul>
-    </>
+    </div>
   );
 }

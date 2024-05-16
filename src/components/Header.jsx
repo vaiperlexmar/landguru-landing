@@ -6,8 +6,9 @@ import DropdownLink from "./DropdownLink/DropdownLink";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
-  const [activeIndex, setActiveIndex] = useState(-1);
+  const [activeIndex, setActiveIndex] = useState(-1); // CHANGE AFTER STYLING
   const isMobile = useMediaQuery("(max-width:767.5px)");
+  const isDesktop = useMediaQuery("(min-width:1024.5px)");
 
   function toggleHamburger() {
     setIsOpen(!isOpen);
@@ -33,6 +34,14 @@ export default function Header() {
         },
       }
     : { style: { display: "flex", transform: "none" } };
+
+  const buttonAttributes = isDesktop
+    ? {
+        style: { display: "none" },
+      }
+    : {
+        style: {},
+      };
 
   return (
     <header className="header">
@@ -65,9 +74,8 @@ export default function Header() {
             <DropdownLink
               name={"Adversite"}
               isActive={activeIndex === 0}
-              onShow={() =>
-                activeIndex === 0 ? setActiveIndex(-1) : setActiveIndex(0)
-              }
+              onShow={() => setActiveIndex(0)}
+              onHide={() => setActiveIndex(-1)}
             >
               <li className="header__nav-subitem">
                 <a href="#" className="header__nav-sublink sublink">
@@ -91,9 +99,8 @@ export default function Header() {
             <DropdownLink
               name={"Support"}
               isActive={activeIndex === 1}
-              onShow={() =>
-                activeIndex === 1 ? setActiveIndex(-1) : setActiveIndex(1)
-              }
+              onShow={() => setActiveIndex(1)}
+              onHide={() => setActiveIndex(-1)}
             >
               <li className="header__nav-subitem">
                 <a href="#" className="header__nav-sublink sublink">
@@ -119,8 +126,12 @@ export default function Header() {
           </li>
         </ul>
 
-        <button className="btn btn_transparent">Get Started</button>
+        <button className="btn btn_transparent" {...buttonAttributes}>
+          Get Started
+        </button>
       </motion.nav>
+
+      <button className="btn btn_transparent btn_desktop">Get Started</button>
     </header>
   );
 }
