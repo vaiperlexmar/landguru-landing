@@ -924,6 +924,7 @@ section {
 
   section {
     padding: 1.5rem 17.5vw;
+    overflow: hidden;
   }
 
   .btn {
