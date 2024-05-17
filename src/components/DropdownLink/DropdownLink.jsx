@@ -29,8 +29,6 @@ export default function DropdownLink({
         className={`header__nav-link link header__nav-dropdown ${
           isActive ? "open" : ""
         }`}
-        onClick={onShow}
-        onMouseEnter={onShow}
       >
         {name}{" "}
         <motion.img

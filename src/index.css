@@ -926,6 +926,11 @@ section {
     padding: 1.5rem 17.5vw;
   }
 
+  .btn {
+    cursor: pointer;
+    z-index: 999;
+  }
+
   /*-----------------------------------*\
     #HEADER
   \*-----------------------------------*/
@@ -981,7 +986,6 @@ section {
   }
 
   .header__shapes-container {
-    z-index: -1;
     background-color: var(--dark-navy);
     border-bottom-right-radius: 23%;
     padding-bottom: 2.5%;
@@ -1042,6 +1046,8 @@ section {
     grid-row: reverse;
     padding: 0 17.5vw 10rem;
     background-color: transparent;
+    position: relative;
+    z-index: 999;
   }
 
   .hero__textbox {
