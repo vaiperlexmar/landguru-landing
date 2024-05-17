@@ -13,8 +13,7 @@ import Footer from "./components/Footer";
 
 import shape_1 from "../src/assets/Rectangle 1.png";
 import shape_2 from "../src/assets/Rectangle 1.1.png";
-import circle_shape_1 from "../src/assets/circle.png";
-import circle_shape_2 from "../src/assets/circle-2.png";
+import circle_shape from "../src/assets/circle.png";
 
 function App() {
   return (
@@ -25,13 +24,19 @@ function App() {
 
         <img
           className="header__shapes-3 header__circle-shape-1"
-          src={circle_shape_1}
+          src={circle_shape}
           alt=""
         />
 
         <img
           className="header__shapes-3 header__circle-shape-2"
-          src={circle_shape_2}
+          src={circle_shape}
+          alt=""
+        />
+
+        <img
+          className="header__shapes-3 header__circle-shape-3"
+          src={circle_shape}
           alt=""
         />
         <Header />

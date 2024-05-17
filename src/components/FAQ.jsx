@@ -7,22 +7,22 @@ export default function FAQ() {
   const faqItems = [
     {
       title: "How to contact with riders emergency ?",
-      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque libero magni praesentium. Corrupti explicabo suscipit amet. Possimus, aliquam voluptas saepe, facilis omnis atque, quo ab ipsam reprehenderit consequuntur placeat? Earum?",
+      text: "Get your blood tests delivered at the home collect a sample from management news. Get your blood tests delivered at the home collect a sample from management news. Get your blood tests delivered at the home collect a sample from management news. Get your blood tests delivered at the home.",
     },
 
     {
       title: "App installation failed, how to update system information?",
-      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque libero magni praesentium. Corrupti explicabo suscipit amet. Possimus, aliquam voluptas saepe, facilis omnis atque, quo ab ipsam reprehenderit consequuntur placeat? Earum?",
+      text: "Get your blood tests delivered at the home collect a sample from management news. Get your blood tests delivered at the home collect a sample from management news. Get your blood tests delivered at the home collect a sample from management news. Get your blood tests delivered at the home.",
     },
 
     {
       title: "Website reponse taking time, how to improve?",
-      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque libero magni praesentium. Corrupti explicabo suscipit amet. Possimus, aliquam voluptas saepe, facilis omnis atque, quo ab ipsam reprehenderit consequuntur placeat? Earum?",
+      text: "Get your blood tests delivered at the home collect a sample from management news. Get your blood tests delivered at the home collect a sample from management news. Get your blood tests delivered at the home collect a sample from management news. Get your blood tests delivered at the home.",
     },
 
     {
       title: "New update fixed all bug and issues",
-      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque libero magni praesentium. Corrupti explicabo suscipit amet. Possimus, aliquam voluptas saepe, facilis omnis atque, quo ab ipsam reprehenderit consequuntur placeat? Earum?",
+      text: "Get your blood tests delivered at the home collect a sample from management news. Get your blood tests delivered at the home collect a sample from management news. Get your blood tests delivered at the home collect a sample from management news. Get your blood tests delivered at the home.",
     },
   ];
 

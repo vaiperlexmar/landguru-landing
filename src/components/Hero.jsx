@@ -8,7 +8,7 @@ import dropboxIcon from "../assets/dropbox.svg";
 export default function Hero() {
   return (
     <section className="hero">
-      <div className="hero__image">
+      <div className="hero__image-container">
         <img className="hero__mockup" src={phoneMockup} alt="" />
         <img className="hero__dot-pattern" src={dotPattern} alt="" />
       </div>
@@ -27,18 +27,20 @@ export default function Hero() {
             <img src={playCircle} alt="" /> Watch video
           </a>
         </div>
-        <p className="hero__sponsored paragraph">Sponsored by: </p>
-        <ul className="hero__sponsored-list">
-          <li className="hero__sponsored-item">
-            <img className="hero__sponsored-img" src={paypalIcon} alt="" />
-          </li>
-          <li className="hero__sponsored-item">
-            <img className="hero__sponsored-img" src={googleIcon} alt="" />
-          </li>
-          <li className="hero__sponsored-item">
-            <img className="hero__sponsored-img" src={dropboxIcon} alt="" />
-          </li>
-        </ul>{" "}
+        <div className="hero__sponsored">
+          <p className="hero__sponsored paragraph">Sponsored by: </p>
+          <ul className="hero__sponsored-list">
+            <li className="hero__sponsored-item">
+              <img className="hero__sponsored-img" src={paypalIcon} alt="" />
+            </li>
+            <li className="hero__sponsored-item">
+              <img className="hero__sponsored-img" src={googleIcon} alt="" />
+            </li>
+            <li className="hero__sponsored-item">
+              <img className="hero__sponsored-img" src={dropboxIcon} alt="" />
+            </li>
+          </ul>{" "}
+        </div>
       </div>
     </section>
   );

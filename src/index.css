@@ -24,6 +24,16 @@
     --fs-7: 1.4rem;
   }
 
+  @media (min-width: 1025px) {
+    --fs-1: 8.5rem;
+    --fs-2: 4.8rem;
+    --fs-3: 3.6rem;
+    --fs-4: 2.2rem;
+    --fs-5: 1.8rem;
+    --fs-6: 1.6rem;
+    --fs-7: 1.4rem;
+  }
+
   --black-navy: #0f2137;
   --dark-navy: #1e3c72;
   --medium-navy: #22437d;
@@ -306,7 +316,7 @@ section {
   color: var(--white);
 }
 
-.hero__image {
+.hero__image-container {
   position: relative;
 }
 
@@ -352,6 +362,7 @@ section {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  font-weight: 500;
 }
 
 .hero__cta-video img {
@@ -886,11 +897,33 @@ section {
   #MEDIA QUERIES for desktop
 \*-----------------------------------*/
 
-@media (min-width: 1025px) {
+@media (min-width: 1200px) {
   [class$="_desktop"] {
     visibility: visible;
     opacity: 1;
     display: block;
+  }
+
+  /*-----------------------------------*\
+    #REUSABLE STYLES
+  \*-----------------------------------*/
+
+  .heading-primary {
+    letter-spacing: 1px;
+    line-height: 1.2;
+    word-spacing: 0.3rem;
+  }
+
+  .heading-tertiary {
+    font-size: var(--fs-4);
+  }
+
+  .paragraph {
+    font-size: var(--fs-6);
+  }
+
+  section {
+    padding: 1.5rem 17.5vw;
   }
 
   /*-----------------------------------*\
@@ -902,6 +935,7 @@ section {
     justify-content: space-evenly;
     padding: 1.5rem 8vw;
     gap: 8.2rem;
+    margin-bottom: 9rem;
   }
 
   .header__logo {
@@ -944,5 +978,199 @@ section {
   .header__nav-link:hover {
     text-shadow: -0.04ex 0 0 currentColor, 0.04ex 0 0 currentColor;
     transition: all 0.2s;
+  }
+
+  .header__shapes-container {
+    z-index: -1;
+    background-color: var(--dark-navy);
+    border-bottom-right-radius: 23%;
+    padding-bottom: 2.5%;
+    margin-bottom: 6.5rem;
+  }
+
+  [class*="header__circle-shape-"] {
+    max-width: 52.6rem;
+    max-height: 52.6rem;
+    width: 100%;
+    height: 100%;
+  }
+
+  .header__circle-shape-1 {
+    top: -30%;
+    right: -7%;
+  }
+
+  .header__circle-shape-2 {
+    top: -5%;
+    left: -4.5%;
+    opacity: 0.23;
+  }
+
+  .header__circle-shape-3 {
+    bottom: -1%;
+    left: -4.5%;
+  }
+
+  .header__shapes-1,
+  .header__shapes-2 {
+    max-width: 28vw;
+    width: 100%;
+  }
+
+  .header__shapes-1 {
+    left: 23%;
+    max-height: 90rem;
+    height: 100%;
+  }
+
+  .header__shapes-2 {
+    right: 20vw;
+    bottom: 0;
+    z-index: 0;
+    max-height: 78rem;
+    height: 100%;
+  }
+
+  /*-----------------------------------*\
+    #HERO
+  \*-----------------------------------*/
+
+  .hero {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    align-items: center;
+    grid-row: reverse;
+    padding: 0 17.5vw 10rem;
+    background-color: transparent;
+  }
+
+  .hero__textbox {
+    text-align: start;
+    padding: 0;
+  }
+
+  .hero__heading {
+    margin-bottom: 2.7rem;
+  }
+
+  .hero__text {
+    font-size: var(--fs-5);
+    line-height: 2.3;
+    padding-right: 32%;
+    word-spacing: 1px;
+    margin-bottom: 2.9rem;
+  }
+
+  .hero__image-container {
+    order: 1;
+    height: 100%;
+  }
+
+  .hero__mockup {
+    width: 230%;
+    max-width: 90rem;
+    position: absolute;
+    top: -2%;
+    left: -16vw;
+  }
+
+  .hero__dot-pattern {
+    width: 100%;
+    max-width: 30rem;
+    left: 53%;
+    top: -5.8%;
+    height: 57%;
+  }
+
+  .hero__cta {
+    justify-content: flex-start;
+    margin-bottom: 4rem;
+  }
+
+  .hero__cta-video {
+    font-size: var(--fs-6);
+    align-items: end;
+    text-transform: capitalize;
+    letter-spacing: -0.8px;
+    gap: 0.4rem;
+    line-height: 1.5;
+  }
+
+  .hero__sponsored {
+    display: flex;
+    align-items: center;
+    gap: 2.2rem;
+  }
+
+  .hero__sponsored-list {
+    display: flex;
+    align-items: center;
+    gap: 2.7rem;
+    margin-top: 0.5rem;
+  }
+
+  .hero__sponsored-item {
+    margin: 0;
+  }
+
+  /*-----------------------------------*\
+    #FUNCTIONS 
+  \*-----------------------------------*/
+
+  /*-----------------------------------*\
+    #CORE FEATURES 2
+  \*-----------------------------------*/
+
+  .core-features_2 {
+    padding: 0 17.5vw;
+  }
+
+  /*-----------------------------------*\
+    #PRICING
+  \*-----------------------------------*/
+
+  .pricing__list-container {
+    gap: 3rem;
+    padding: 0 17.5vw;
+  }
+
+  .pricing__price-currency,
+  .pricing__price-amount {
+    font-size: 2.6rem;
+  }
+
+  .pricing__price-period {
+    font-size: 2.2rem;
+  }
+
+  /*-----------------------------------*\
+    #FAQ
+  \*-----------------------------------*/
+
+  .faq {
+    padding: 0 17.5vw;
+    margin-bottom: 13.9rem;
+  }
+
+  /*-----------------------------------*\
+    #FOOTER
+  \*-----------------------------------*/
+
+  .footer__container {
+    padding: 6.5rem 17.5vw;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .footer__hr {
+    width: 58.6vw;
+    margin: 0 auto;
+  }
+
+  .footer__col {
+    text-align: start;
+  }
+
+  .footer__link {
+    font-size: var(--fs-7);
   }
 }
