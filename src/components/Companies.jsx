@@ -9,7 +9,7 @@ export default function Companies() {
         <h2 className="heading-secondary">
           Smart Jackpots that you may love this anytime & anywhere
         </h2>
-        <p className="paragraph paragraph_high-line">
+        <p className="companies__text paragraph paragraph_high-line">
           Get your tests delivered at let home collect sample from the victory
           of the managments that supplies best design system guidelines ever.
           Get your tests delivered at let home collect sample.
