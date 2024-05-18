@@ -6,47 +6,47 @@ import ultimateCustomizationIcon from "../assets/quality-features_2/ultimate-cus
 import boostProductivityIcon from "../assets/quality-features_2/boost-productivity.svg";
 import customerSupportIcon from "../assets/quality-features_2/customer-support.svg";
 
-export default function QualityFeatures_1() {
+export default function QualityFeatures_2() {
   const qualityFeatures = [
     {
       name: "Smart Features",
       description:
-        "Get your blood tests delivered at let home collect a sample from the your blood tests.",
+        "Get your blood tests delivered at let home collect sample from the victory of the managments.",
       img: smartFeaturesIcon,
     },
 
     {
       name: "Fast Performance",
       description:
-        "Get your blood tests delivered at let home collect a sample from the your blood tests.",
+        "Get your blood tests delivered at let home collect sample from the victory of the managments.",
       img: fastPerformanceIcon,
     },
 
     {
       name: "Unlimited Content",
       description:
-        "Get your blood tests delivered at let home collect a sample from the your blood tests.",
+        "Get your blood tests delivered at let home collect sample from the victory of the managments.",
       img: unlimitedContentIcon,
     },
 
     {
       name: "Ultimate Customization",
       description:
-        "Get your blood tests delivered at let home collect a sample from the your blood tests.",
+        "Get your blood tests delivered at let home collect sample from the victory of the managments.",
       img: ultimateCustomizationIcon,
     },
 
     {
       name: "Boost Productivity",
       description:
-        "Get your blood tests delivered at let home collect a sample from the your blood tests.",
+        "Get your blood tests delivered at let home collect sample from the victory of the managments.",
       img: boostProductivityIcon,
     },
 
     {
       name: "Customer Support",
       description:
-        "Get your blood tests delivered at let home collect a sample from the your blood tests.",
+        "Get your blood tests delivered at let home collect sample from the victory of the managments.",
       img: customerSupportIcon,
     },
   ];

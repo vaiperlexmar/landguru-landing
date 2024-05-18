@@ -7,10 +7,12 @@ export default function FeatureList({ items, listName }) {
     return (
       <li className={`${listName}__feature`} key={name}>
         <img className={`${listName}__feature-icon`} src={img} alt="" />
-        <h4 className={`${listName}__feature-heading heading-fourth`}>
-          {name}
-        </h4>
-        <p className={`${listName}__feature-text paragraph`}>{description}</p>
+        <div className={`${listName}__feature-content`}>
+          <h4 className={`${listName}__feature-heading heading-fourth`}>
+            {name}
+          </h4>
+          <p className={`${listName}__feature-text paragraph`}>{description}</p>
+        </div>
       </li>
     );
   });
