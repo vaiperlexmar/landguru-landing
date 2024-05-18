@@ -24,7 +24,17 @@
     --fs-7: 1.4rem;
   }
 
-  @media (min-width: 1025px) {
+  @media (min-width: 1000px) {
+    --fs-1: 7.65rem;
+    --fs-2: 4.32rem;
+    --fs-3: 3.24rem;
+    --fs-4: 1.98rem;
+    --fs-5: 1.62rem;
+    --fs-6: 1.44rem;
+    --fs-7: 1.26rem;
+  }
+
+  @media (min-width: 1200px) {
     --fs-1: 8.5rem;
     --fs-2: 4.8rem;
     --fs-3: 3.6rem;
@@ -401,6 +411,7 @@ section {
 
 .features-list__feature-heading {
   margin-bottom: 1rem;
+  text-transform: capitalize;
 }
 
 /*-----------------------------------*\
@@ -915,11 +926,13 @@ section {
   }
 
   .heading-tertiary {
-    font-size: var(--fs-4);
+    font-size: var(--fs-3);
   }
 
   .paragraph {
-    font-size: var(--fs-6);
+    font-size: 1.5rem;
+    line-height: 1.8;
+    color: var(--navy-gray);
   }
 
   section {
@@ -1066,6 +1079,7 @@ section {
     padding-right: 32%;
     word-spacing: 1px;
     margin-bottom: 2.9rem;
+    color: white;
   }
 
   .hero__image-container {
@@ -1107,6 +1121,7 @@ section {
     display: flex;
     align-items: center;
     gap: 2.2rem;
+    color: white;
   }
 
   .hero__sponsored-list {
@@ -1119,6 +1134,60 @@ section {
   .hero__sponsored-item {
     margin: 0;
   }
+
+  /*-----------------------------------*\
+    #FEATURES
+  \*-----------------------------------*/
+
+  .features-list h3 {
+    margin-bottom: 12rem;
+  }
+
+  .features-list__feature {
+    padding: 0 6rem;
+  }
+
+  .features-list__feature-icon {
+    margin-bottom: 2.1rem;
+  }
+
+  .features-list__feature-heading {
+    margin-bottom: 2rem;
+  }
+
+  /*-----------------------------------*\
+    #CORE FEATURES 1
+  \*-----------------------------------*/
+
+  .core-features_1 {
+    grid-template-rows: 0;
+  }
+
+  .core-features_1__text__box {
+    padding-top: 9.7rem;
+  }
+
+  .core-features_1__feature-container {
+    grid-template-columns: 20% 1fr;
+    gap: 0;
+    padding-right: 4rem;
+  }
+
+  .core-features_1__feature:first-child {
+    margin-bottom: 4rem;
+  }
+
+  .core-features_1__feature {
+    max-width: 27vw;
+  }
+
+  .core-features_1__feature-text {
+    line-height: 1.7;
+  }
+
+  /*-----------------------------------*\
+    #QUALITY FEATURES 2
+  \*-----------------------------------*/
 
   /*-----------------------------------*\
     #FUNCTIONS 
@@ -1155,7 +1224,7 @@ section {
   \*-----------------------------------*/
 
   .faq {
-    padding: 0 17.5vw;
+    padding: 0 30vw;
     margin-bottom: 13.9rem;
   }
 

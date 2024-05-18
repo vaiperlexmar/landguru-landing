@@ -18,9 +18,26 @@
 .accordion__text {
   padding-left: 3rem;
   font-size: var(--fs-6);
+  color: var(--navy-gray);
 }
 
 .accordion hr {
   margin: 1rem 0;
   color: #e5ecf4;
+}
+
+@media screen and (min-width: 1200px) {
+  .accordion__title {
+    margin: 0;
+    padding-bottom: 1.8rem;
+  }
+
+  .accordion__text {
+    padding-bottom: 3.5rem;
+    line-height: 2;
+  }
+
+  .accordion hr {
+    margin: 0;
+  }
 }
